@@ -1,0 +1,90 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "05:52",
+    "dep": "05:52"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "05:54",
+    "dep": "05:54"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Havlíčkovo náměstí",
+    "lat": 49.60701,
+    "lon": 15.579344,
+    "arr": "05:56",
+    "dep": "05:56"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Pražská",
+    "lat": 49.613476,
+    "lon": 15.576976,
+    "arr": "05:58",
+    "dep": "05:58"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, PENNY market",
+    "lat": 49.617329,
+    "lon": 15.574406,
+    "arr": "05:59",
+    "dep": "05:59"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, Nemocnice",
+    "lat": 49.608753,
+    "lon": 15.570479,
+    "arr": "06:02",
+    "dep": "06:02"
+  },
+  {
+    "seq": 7,
+    "name": "Havlíčkův Brod, Bílý dům",
+    "lat": 49.611012,
+    "lon": 15.566806,
+    "arr": "06:03",
+    "dep": "06:03"
+  },
+  {
+    "seq": 8,
+    "name": "Havlíčkův Brod, Psychiatrická nemocnice",
+    "lat": 49.612274,
+    "lon": 15.563846,
+    "arr": "06:04",
+    "dep": "06:04"
+  },
+  {
+    "seq": 9,
+    "name": "Havlíčkův Brod, Rozkošská",
+    "lat": 49.614437,
+    "lon": 15.556517,
+    "arr": "06:05",
+    "dep": "06:05"
+  },
+  {
+    "seq": 10,
+    "name": "Havlíčkův Brod, Perknov sídl.",
+    "lat": 49.615494,
+    "lon": 15.549189,
+    "arr": "06:06",
+    "dep": "06:06"
+  },
+  {
+    "seq": 11,
+    "name": "Havlíčkův Brod, Perknov",
+    "lat": 49.617371,
+    "lon": 15.544238,
+    "arr": "06:07",
+    "dep": "06:07"
+  }
+]

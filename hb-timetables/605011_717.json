@@ -1,0 +1,42 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "16:38",
+    "dep": "16:38"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "16:40",
+    "dep": "16:40"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Havlíčkovo náměstí",
+    "lat": 49.60701,
+    "lon": 15.579344,
+    "arr": "16:42",
+    "dep": "16:42"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Pražská",
+    "lat": 49.613476,
+    "lon": 15.576976,
+    "arr": "16:44",
+    "dep": "16:44"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, PENNY market",
+    "lat": 49.617329,
+    "lon": 15.574406,
+    "arr": "16:45",
+    "dep": "16:45"
+  }
+]

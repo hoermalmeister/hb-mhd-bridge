@@ -1,0 +1,106 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "04:55",
+    "dep": "04:55"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "04:57",
+    "dep": "04:57"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, KD Ostrov",
+    "lat": 49.605251,
+    "lon": 15.582615,
+    "arr": "04:59",
+    "dep": "04:59"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Penzion STARR",
+    "lat": 49.604874,
+    "lon": 15.587392,
+    "arr": "05:00",
+    "dep": "05:00"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, Žižkova",
+    "lat": 49.604618,
+    "lon": 15.592504,
+    "arr": "05:01",
+    "dep": "05:01"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, Pekárny",
+    "lat": 49.606339,
+    "lon": 15.59926,
+    "arr": "05:02",
+    "dep": "05:02"
+  },
+  {
+    "seq": 7,
+    "name": "Havlíčkův Brod, Kyjovská",
+    "lat": 49.607529,
+    "lon": 15.595769,
+    "arr": "05:04",
+    "dep": "05:04"
+  },
+  {
+    "seq": 8,
+    "name": "Havlíčkův Brod, Horní Žižkov, Žižkov II",
+    "lat": 49.607773,
+    "lon": 15.59329,
+    "arr": "05:05",
+    "dep": "05:05"
+  },
+  {
+    "seq": 9,
+    "name": "Havlíčkův Brod, Nad Kalvárií",
+    "lat": 49.609756,
+    "lon": 15.585507,
+    "arr": "05:06",
+    "dep": "05:06"
+  },
+  {
+    "seq": 10,
+    "name": "Havlíčkův Brod, Prokopa Holého",
+    "lat": 49.605549,
+    "lon": 15.583059,
+    "arr": "05:07",
+    "dep": "05:07"
+  },
+  {
+    "seq": 11,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "05:10",
+    "dep": "05:10"
+  },
+  {
+    "seq": 12,
+    "name": "Havlíčkův Brod, Poliklinika",
+    "lat": 49.601711,
+    "lon": 15.581637,
+    "arr": "05:11",
+    "dep": "05:11"
+  },
+  {
+    "seq": 13,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "05:12",
+    "dep": "05:12"
+  }
+]

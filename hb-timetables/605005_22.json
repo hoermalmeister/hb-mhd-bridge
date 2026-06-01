@@ -1,0 +1,58 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Barum",
+    "lat": 49.59314,
+    "lon": 15.592385,
+    "arr": "14:01",
+    "dep": "14:01"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Průmyslová",
+    "lat": 49.590088,
+    "lon": 15.589962,
+    "arr": "14:02",
+    "dep": "14:02"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Nový Svět",
+    "lat": 49.589722,
+    "lon": 15.582397,
+    "arr": "14:04",
+    "dep": "14:04"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Jihlavská",
+    "lat": 49.597759,
+    "lon": 15.579981,
+    "arr": "14:06",
+    "dep": "14:06"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, Sekaninova",
+    "lat": 49.598961,
+    "lon": 15.578791,
+    "arr": "14:07",
+    "dep": "14:07"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, Strážná",
+    "lat": 49.599583,
+    "lon": 15.581191,
+    "arr": "14:08",
+    "dep": "14:08"
+  },
+  {
+    "seq": 7,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "14:09",
+    "dep": "14:09"
+  }
+]

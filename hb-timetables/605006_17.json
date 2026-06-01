@@ -1,0 +1,34 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "17:47",
+    "dep": "17:47"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Vysočany I",
+    "lat": 49.599243,
+    "lon": 15.59578,
+    "arr": "17:49",
+    "dep": "17:49"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Vysočany rozcestí",
+    "lat": 49.596443,
+    "lon": 15.60331,
+    "arr": "17:51",
+    "dep": "17:51"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Termesivy",
+    "lat": 49.599945,
+    "lon": 15.617373,
+    "arr": "17:54",
+    "dep": "17:54"
+  }
+]

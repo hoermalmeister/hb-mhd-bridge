@@ -1,0 +1,74 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Vršovice",
+    "lat": 49.61631,
+    "lon": 15.587554,
+    "arr": "06:30",
+    "dep": "06:30"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Reynkova TS",
+    "lat": 49.618248,
+    "lon": 15.581717,
+    "arr": "06:32",
+    "dep": "06:32"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, PENNY market",
+    "lat": 49.617329,
+    "lon": 15.574406,
+    "arr": "06:36",
+    "dep": "06:36"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Výšina",
+    "lat": 49.616249,
+    "lon": 15.576513,
+    "arr": "06:37",
+    "dep": "06:37"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, Pražská",
+    "lat": 49.613476,
+    "lon": 15.576976,
+    "arr": "06:39",
+    "dep": "06:39"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, Havlíčkovo náměstí",
+    "lat": 49.60701,
+    "lon": 15.579344,
+    "arr": "06:41",
+    "dep": "06:41"
+  },
+  {
+    "seq": 7,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "06:43",
+    "dep": "06:43"
+  },
+  {
+    "seq": 8,
+    "name": "Havlíčkův Brod, Poliklinika",
+    "lat": 49.601711,
+    "lon": 15.581637,
+    "arr": "06:44",
+    "dep": "06:44"
+  },
+  {
+    "seq": 9,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "06:45",
+    "dep": "06:45"
+  }
+]

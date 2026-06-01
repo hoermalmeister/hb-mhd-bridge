@@ -1,0 +1,42 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Čechova",
+    "lat": 49.600338,
+    "lon": 15.568813,
+    "arr": "14:28",
+    "dep": "14:28"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, stavba",
+    "lat": 49.601631,
+    "lon": 15.566902,
+    "arr": "14:29",
+    "dep": "14:29"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "14:33",
+    "dep": "14:33"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Poliklinika",
+    "lat": 49.601711,
+    "lon": 15.581637,
+    "arr": "14:34",
+    "dep": "14:34"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "14:35",
+    "dep": "14:35"
+  }
+]

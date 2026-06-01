@@ -1,0 +1,50 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "06:42",
+    "dep": "06:42"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "06:44",
+    "dep": "06:44"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Humpolecká",
+    "lat": 49.602634,
+    "lon": 15.575554,
+    "arr": "06:46",
+    "dep": "06:46"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, letiště",
+    "lat": 49.596859,
+    "lon": 15.5602,
+    "arr": "06:49",
+    "dep": "06:49"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, Občiny",
+    "lat": null,
+    "lon": null,
+    "arr": "06:50",
+    "dep": "06:50"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, Šmolovy",
+    "lat": 49.588272,
+    "lon": 15.542012,
+    "arr": "06:53",
+    "dep": "06:53"
+  }
+]

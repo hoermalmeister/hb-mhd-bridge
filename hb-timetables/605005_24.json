@@ -1,0 +1,66 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Mírovka",
+    "lat": 49.580254,
+    "lon": 15.620001,
+    "arr": "14:45",
+    "dep": "14:45"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Baštinov",
+    "lat": 49.57848,
+    "lon": 15.60622,
+    "arr": "14:47",
+    "dep": "14:47"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Futaba",
+    "lat": 49.582607,
+    "lon": 15.60099,
+    "arr": "14:49",
+    "dep": "14:49"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Barum",
+    "lat": 49.59314,
+    "lon": 15.592385,
+    "arr": "14:51",
+    "dep": "14:51"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, Uhelné sklady",
+    "lat": 49.59367,
+    "lon": 15.590732,
+    "arr": "14:52",
+    "dep": "14:52"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, Havířská",
+    "lat": 49.596344,
+    "lon": 15.586582,
+    "arr": "14:53",
+    "dep": "14:53"
+  },
+  {
+    "seq": 7,
+    "name": "Havlíčkův Brod, Pleas",
+    "lat": 49.600483,
+    "lon": 15.583176,
+    "arr": "14:54",
+    "dep": "14:54"
+  },
+  {
+    "seq": 8,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "14:55",
+    "dep": "14:55"
+  }
+]

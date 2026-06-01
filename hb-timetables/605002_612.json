@@ -1,0 +1,162 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Perknov",
+    "lat": 49.617371,
+    "lon": 15.544238,
+    "arr": "11:25",
+    "dep": "11:25"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Perknov sídl.",
+    "lat": 49.615494,
+    "lon": 15.549189,
+    "arr": "11:26",
+    "dep": "11:26"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Rozkošská",
+    "lat": 49.614437,
+    "lon": 15.556517,
+    "arr": "11:27",
+    "dep": "11:27"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Psychiatrická nemocnice",
+    "lat": 49.612274,
+    "lon": 15.563846,
+    "arr": "11:28",
+    "dep": "11:28"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, Bílý dům",
+    "lat": 49.611012,
+    "lon": 15.566806,
+    "arr": "11:29",
+    "dep": "11:29"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, Nemocnice",
+    "lat": 49.608753,
+    "lon": 15.570479,
+    "arr": "11:30",
+    "dep": "11:30"
+  },
+  {
+    "seq": 7,
+    "name": "Havlíčkův Brod, Nový hřbitov",
+    "lat": 49.621052,
+    "lon": 15.572043,
+    "arr": "11:34",
+    "dep": "11:34"
+  },
+  {
+    "seq": 8,
+    "name": "Havlíčkův Brod, PENNY market",
+    "lat": 49.617329,
+    "lon": 15.574406,
+    "arr": "11:36",
+    "dep": "11:36"
+  },
+  {
+    "seq": 9,
+    "name": "Havlíčkův Brod, Pražská",
+    "lat": 49.613476,
+    "lon": 15.576976,
+    "arr": "11:37",
+    "dep": "11:37"
+  },
+  {
+    "seq": 10,
+    "name": "Havlíčkův Brod, Havlíčkovo náměstí",
+    "lat": 49.60701,
+    "lon": 15.579344,
+    "arr": "11:38",
+    "dep": "11:38"
+  },
+  {
+    "seq": 11,
+    "name": "Havlíčkův Brod, KD Ostrov",
+    "lat": 49.605251,
+    "lon": 15.582615,
+    "arr": "11:40",
+    "dep": "11:40"
+  },
+  {
+    "seq": 12,
+    "name": "Havlíčkův Brod, Penzion STARR",
+    "lat": 49.604874,
+    "lon": 15.587392,
+    "arr": "11:41",
+    "dep": "11:41"
+  },
+  {
+    "seq": 13,
+    "name": "Havlíčkův Brod, Žižkova",
+    "lat": 49.604618,
+    "lon": 15.592504,
+    "arr": "11:42",
+    "dep": "11:42"
+  },
+  {
+    "seq": 14,
+    "name": "Havlíčkův Brod, Kyjovská",
+    "lat": 49.607529,
+    "lon": 15.595769,
+    "arr": "11:43",
+    "dep": "11:43"
+  },
+  {
+    "seq": 15,
+    "name": "Havlíčkův Brod, Horní Žižkov, Žižkov II",
+    "lat": 49.607773,
+    "lon": 15.59329,
+    "arr": "11:44",
+    "dep": "11:44"
+  },
+  {
+    "seq": 16,
+    "name": "Havlíčkův Brod, Nad Kalvárií",
+    "lat": 49.609756,
+    "lon": 15.585507,
+    "arr": "11:45",
+    "dep": "11:45"
+  },
+  {
+    "seq": 17,
+    "name": "Havlíčkův Brod, Prokopa Holého",
+    "lat": 49.605549,
+    "lon": 15.583059,
+    "arr": "11:46",
+    "dep": "11:46"
+  },
+  {
+    "seq": 18,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "11:49",
+    "dep": "11:49"
+  },
+  {
+    "seq": 19,
+    "name": "Havlíčkův Brod, Poliklinika",
+    "lat": 49.601711,
+    "lon": 15.581637,
+    "arr": "11:50",
+    "dep": "11:50"
+  },
+  {
+    "seq": 20,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "11:51",
+    "dep": "11:51"
+  }
+]

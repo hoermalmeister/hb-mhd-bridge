@@ -1,0 +1,74 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "14:57",
+    "dep": "14:57"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "14:59",
+    "dep": "14:59"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Havlíčkovo náměstí",
+    "lat": 49.60701,
+    "lon": 15.579344,
+    "arr": "15:02",
+    "dep": "15:02"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Pražská",
+    "lat": 49.613476,
+    "lon": 15.576976,
+    "arr": "15:04",
+    "dep": "15:04"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, Výšina",
+    "lat": 49.616249,
+    "lon": 15.576513,
+    "arr": "15:05",
+    "dep": "15:05"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, PENNY market",
+    "lat": 49.617329,
+    "lon": 15.574406,
+    "arr": "15:06",
+    "dep": "15:06"
+  },
+  {
+    "seq": 7,
+    "name": "Havlíčkův Brod, Reynkova TS",
+    "lat": 49.618248,
+    "lon": 15.581717,
+    "arr": "15:08",
+    "dep": "15:08"
+  },
+  {
+    "seq": 8,
+    "name": "Havlíčkův Brod, Vršovice rozcestí",
+    "lat": 49.619099,
+    "lon": 15.589548,
+    "arr": "15:10",
+    "dep": "15:10"
+  },
+  {
+    "seq": 9,
+    "name": "Havlíčkův Brod, Vršovice",
+    "lat": 49.61631,
+    "lon": 15.587554,
+    "arr": "15:11",
+    "dep": "15:11"
+  }
+]

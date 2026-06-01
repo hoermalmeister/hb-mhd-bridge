@@ -1,0 +1,74 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Šmolovy",
+    "lat": 49.588272,
+    "lon": 15.542012,
+    "arr": "06:55",
+    "dep": "06:55"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, letiště",
+    "lat": 49.596859,
+    "lon": 15.5602,
+    "arr": "06:57",
+    "dep": "06:57"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Čechova",
+    "lat": 49.600338,
+    "lon": 15.568813,
+    "arr": "07:00",
+    "dep": "07:00"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Lipnická",
+    "lat": 49.602634,
+    "lon": 15.564906,
+    "arr": "07:02",
+    "dep": "07:02"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, U prodejny",
+    "lat": 49.602074,
+    "lon": 15.561869,
+    "arr": "07:03",
+    "dep": "07:03"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, stavba",
+    "lat": 49.601631,
+    "lon": 15.566902,
+    "arr": "07:05",
+    "dep": "07:05"
+  },
+  {
+    "seq": 7,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "07:09",
+    "dep": "07:09"
+  },
+  {
+    "seq": 8,
+    "name": "Havlíčkův Brod, Poliklinika",
+    "lat": 49.601711,
+    "lon": 15.581637,
+    "arr": "07:10",
+    "dep": "07:10"
+  },
+  {
+    "seq": 9,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "07:11",
+    "dep": "07:11"
+  }
+]

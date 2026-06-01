@@ -1,0 +1,90 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Perknov",
+    "lat": 49.617371,
+    "lon": 15.544238,
+    "arr": "12:38",
+    "dep": "12:38"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Okrouhlická",
+    "lat": 49.611954,
+    "lon": 15.548336,
+    "arr": "12:40",
+    "dep": "12:40"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Králíčkova",
+    "lat": 49.609711,
+    "lon": 15.559947,
+    "arr": "12:41",
+    "dep": "12:41"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Ledečská",
+    "lat": 49.606842,
+    "lon": 15.568645,
+    "arr": "12:42",
+    "dep": "12:42"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, Nemocnice",
+    "lat": 49.608753,
+    "lon": 15.570479,
+    "arr": "12:44",
+    "dep": "12:44"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, PENNY market",
+    "lat": 49.617329,
+    "lon": 15.574406,
+    "arr": "12:47",
+    "dep": "12:47"
+  },
+  {
+    "seq": 7,
+    "name": "Havlíčkův Brod, Pražská",
+    "lat": 49.613476,
+    "lon": 15.576976,
+    "arr": "12:48",
+    "dep": "12:48"
+  },
+  {
+    "seq": 8,
+    "name": "Havlíčkův Brod, Havlíčkovo náměstí",
+    "lat": 49.60701,
+    "lon": 15.579344,
+    "arr": "12:49",
+    "dep": "12:49"
+  },
+  {
+    "seq": 9,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "lat": 49.602638,
+    "lon": 15.579429,
+    "arr": "12:51",
+    "dep": "12:51"
+  },
+  {
+    "seq": 10,
+    "name": "Havlíčkův Brod, Poliklinika",
+    "lat": 49.601711,
+    "lon": 15.581637,
+    "arr": "12:52",
+    "dep": "12:52"
+  },
+  {
+    "seq": 11,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "lat": 49.600681,
+    "lon": 15.587496,
+    "arr": "12:53",
+    "dep": "12:53"
+  }
+]
