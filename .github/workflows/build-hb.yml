@@ -1,0 +1,38 @@
+name: Update Havlickuv Brod Timetables
+
+on:
+  schedule:
+    - cron: '0 5 * * *' 
+  workflow_dispatch: 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repozitáře
+        uses: actions/checkout@v3
+
+      - name: Instalace Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Instalace závislostí
+        run: npm install csv-parse sync
+
+      - name: Stažení a rozbalení GTFS
+        run: |
+          wget https://www.spojenka.cz/jrdata/jizdnirady-gtfs.zip
+          unzip jizdnirady-gtfs.zip -d gtfs
+
+      - name: Spuštění generátoru
+        run: node build-hb-gtfs.js
+
+      - name: Upload na GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./hb-timetables
+          destination_dir: hb-timetables # Bude dostupné ve složce /hb-timetables/
+          keep_files: true # Nesmaže ostatní soubory z tvé stránky (např. stops.txt)
