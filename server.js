@@ -8,8 +8,8 @@ app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 // Paměť pro data
-const vehicleMap = new Map(); // Autobusy z mapy
-let latestTableData = [];     // Data z tabulky odjezdů
+const vehicleMap = new Map(); 
+let latestTableData = [];     
 let hbVehicles = { type: "FeatureCollection", features: [] };
 
 (async () => {
@@ -21,7 +21,10 @@ let hbVehicles = { type: "FeatureCollection", features: [] };
     });
     const page = await browser.newPage();
 
-    // 1. Zpracování GPS pozic (z addBusMarker / updateBusMarker)
+    // Propíšeme konzoli z neviditelného prohlížeče
+    page.on('console', msg => console.log(`[PROHLÍŽEČ]: ${msg.text()}`));
+
+    // 1. Zpracování GPS pozic (s časovým razítkem)
     await page.exposeFunction('sendVehiclesToServer', (jsonString) => {
         try {
             const args = JSON.parse(jsonString);
@@ -31,27 +34,24 @@ let hbVehicles = { type: "FeatureCollection", features: [] };
                 if (Array.isArray(obj)) {
                     obj.forEach(extractVehicles);
                 } else if (typeof obj === 'object') {
-                    // Našli jsme marker autobusu?
                     if (obj.vehiclePlate && obj.position && obj.position.lat && obj.position.lng) {
                         const spz = obj.vehiclePlate.trim();
                         const content = (obj.tooltip && obj.tooltip.content) ? obj.tooltip.content : "";
                         
-                        // Parsování VDV Linky a Spoje: "Linka 2 (723) <br/> Perknov"
                         const linkaMatch = content.match(/Linka\s+(\d+)/i);
                         const spojMatch = content.match(/\((\d+)\)/);
                         
                         const shortLine = linkaMatch ? linkaMatch[1] : "??";
                         const runNumber = spojMatch ? spojMatch[1] : "";
                         const finalStop = content.split('<br/>')[1] ? content.split('<br/>')[1].trim() : "";
-                        const angle = obj.angle || 0; // Úhel natočení
+                        const angle = obj.angle || 0; 
 
-                        // VDV Formát (605000 + číslo linky)
                         let vdvLine = "";
                         if (shortLine !== "??") {
                             vdvLine = (605000 + parseInt(shortLine, 10)).toString();
                         }
 
-                        // Uložení základu z mapy
+                        // Uložení základu z mapy + ČASOVÉ RAZÍTKO
                         vehicleMap.set(spz, {
                             type: 'Feature',
                             geometry: { type: 'Point', coordinates: [obj.position.lng, obj.position.lat] },
@@ -69,7 +69,8 @@ let hbVehicles = { type: "FeatureCollection", features: [] };
                                 isNonVDV: false,
                                 delay: 0,
                                 lastStop: "",
-                                delayClass: 'dim'
+                                delayClass: 'dim',
+                                lastSeen: Date.now() // <--- ZÁZNAM ČASU POSLEDNÍ AKTUALIZACE
                             }
                         });
                     } else {
@@ -86,7 +87,7 @@ let hbVehicles = { type: "FeatureCollection", features: [] };
         }
     });
 
-    // 2. Zpracování tabulky zpoždění a zastávek (ze skenování HTML)
+    // 2. Zpracování tabulky zpoždění a zastávek
     await page.exposeFunction('sendTableToServer', (jsonString) => {
         try {
             latestTableData = JSON.parse(jsonString);
@@ -96,14 +97,13 @@ let hbVehicles = { type: "FeatureCollection", features: [] };
         }
     });
 
-    // Funkce, která spojí data z GPS a data z Tabulky dohromady
+    // 3. Fúze dat (Spojí GPS + Tabulku)
     function buildFinalGeoJson() {
         const features = Array.from(vehicleMap.values());
 
         features.forEach(f => {
             const props = f.properties;
             
-            // Pokusíme se najít odpovídající řádek v tabulce podle Linky a Směru
             const tableMatch = latestTableData.find(t => 
                 t.line === props.shortLine && 
                 t.direction.toLowerCase() === props.finalStopName.toLowerCase()
@@ -113,7 +113,6 @@ let hbVehicles = { type: "FeatureCollection", features: [] };
                 props.delay = tableMatch.delay;
                 props.lastStop = tableMatch.currentStop;
                 
-                // Určení barvy zpoždění (jako ve zbytku skriptu)
                 if (props.delay >= 10) props.delayClass = 'alert';
                 else if (props.delay > 2) props.delayClass = 'warn';
                 else props.delayClass = 'ok';
@@ -123,10 +122,29 @@ let hbVehicles = { type: "FeatureCollection", features: [] };
         hbVehicles.features = features;
     }
 
-    // 3. Injekce kódů do stránky (Sledování WebSockets + DOM Scraper)
+    // --- AUTOMATICKÝ ÚKLID (GARBAGE COLLECTOR) ---
+    // Každých 60 vteřin zkontrolujeme, zda nějaký autobus "neumřel"
+    setInterval(() => {
+        const now = Date.now();
+        let removedCount = 0;
+
+        for (const [spz, vehicle] of vehicleMap.entries()) {
+            // Pokud jsme o autobusu neslyšeli déle než 3 minuty (180 000 milisekund), smažeme ho
+            if (now - vehicle.properties.lastSeen > 180000) {
+                vehicleMap.delete(spz);
+                removedCount++;
+                console.log(`🧹 Úklid: Smazán neaktivní autobus ${spz}`);
+            }
+        }
+
+        // Pokud jsme něco smazali, přegenerujeme finální JSON
+        if (removedCount > 0) {
+            buildFinalGeoJson();
+        }
+    }, 60000);
+
+    // 4. Injekce kódů do stránky
     await page.evaluateOnNewDocument(() => {
-        
-        // A) Sledování přidání/pohybu markerů na mapě
         let interopCache = {};
         Object.defineProperty(window, 'MapLeafletInterop', {
             configurable: true,
@@ -150,14 +168,13 @@ let hbVehicles = { type: "FeatureCollection", features: [] };
             }
         });
 
-        // B) Pravidelný DOM Scraper na tabulku (RenderBatch fúze)
+        // Tabulkový Scraper
         setInterval(() => {
             const rows = document.querySelectorAll('tr.dxbs-data-row');
             const tableData = [];
             
             rows.forEach(row => {
                 const cells = row.querySelectorAll('td');
-                // Pokud má řádek dostatek buněk (Linka, Směr, Zastávka, ..., ..., Zpoždění)
                 if (cells.length >= 6) {
                     const delayText = cells[5].innerText.trim();
                     const delayVal = parseInt(delayText, 10);
@@ -174,7 +191,7 @@ let hbVehicles = { type: "FeatureCollection", features: [] };
             if (tableData.length > 0 && window.sendTableToServer) {
                 window.sendTableToServer(JSON.stringify(tableData));
             }
-        }, 2000); // Každé 2 vteřiny přečte tabulku
+        }, 2000);
     });
 
     console.log("⏳ Přistupuji na www.mhdhb.cz...");
@@ -188,7 +205,7 @@ app.get('/', (req, res) => {
     res.send(`
         <div style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px;">
             <h1>🚌 Fúzní Most pro MHD Havlíčkův Brod</h1>
-            <p style="font-size: 20px;">Sledováno autobusů (GPS): <b style="color: #27ae60; font-size: 24px;">${vehicleMap.size}</b></p>
+            <p style="font-size: 20px;">Aktivních autobusů (poslední 3 minuty): <b style="color: #27ae60; font-size: 24px;">${vehicleMap.size}</b></p>
             <p style="font-size: 20px;">Zachyceno dat v tabulce: <b style="color: #8e44ad; font-size: 24px;">${latestTableData.length}</b> řádků</p>
             <a href="/hb.geojson" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #2980b9; color: white; text-decoration: none; border-radius: 5px;">Zobrazit GeoJSON Data</a>
         </div>
@@ -197,6 +214,7 @@ app.get('/', (req, res) => {
 
 // API Endpoint pro tvoji mapu
 app.get('/hb.geojson', (req, res) => {
+    // Před odesláním můžeme vyfiltrovat lastSeen, aby data byla menší, ale Leafletu to vůbec nevadí, takže rovnou posíláme
     res.json(hbVehicles);
 });
 
