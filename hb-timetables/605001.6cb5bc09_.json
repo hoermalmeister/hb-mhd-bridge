@@ -1,0 +1,62 @@
+[
+  {
+    "seq": 1,
+    "name": "Havlíčkův Brod, Perknov",
+    "arr": "16:50",
+    "dep": "16:50"
+  },
+  {
+    "seq": 2,
+    "name": "Havlíčkův Brod, Okrouhlická",
+    "arr": "16:52",
+    "dep": "16:52"
+  },
+  {
+    "seq": 3,
+    "name": "Havlíčkův Brod, Králíčkova",
+    "arr": "16:53",
+    "dep": "16:53"
+  },
+  {
+    "seq": 4,
+    "name": "Havlíčkův Brod, Ledečská",
+    "arr": "16:55",
+    "dep": "16:55"
+  },
+  {
+    "seq": 5,
+    "name": "Havlíčkův Brod, Nemocnice",
+    "arr": "16:57",
+    "dep": "16:57"
+  },
+  {
+    "seq": 6,
+    "name": "Havlíčkův Brod, Husova",
+    "arr": "17:00",
+    "dep": "17:00"
+  },
+  {
+    "seq": 7,
+    "name": "Havlíčkův Brod, Havlíčkovo náměstí",
+    "arr": "17:02",
+    "dep": "17:02"
+  },
+  {
+    "seq": 8,
+    "name": "Havlíčkův Brod, Stavební škola",
+    "arr": "17:04",
+    "dep": "17:04"
+  },
+  {
+    "seq": 9,
+    "name": "Havlíčkův Brod, Poliklinika",
+    "arr": "17:05",
+    "dep": "17:05"
+  },
+  {
+    "seq": 10,
+    "name": "Havlíčkův Brod, Dopravní terminál",
+    "arr": "17:06",
+    "dep": "17:06"
+  }
+]
